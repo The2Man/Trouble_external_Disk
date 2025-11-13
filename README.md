@@ -1,14 +1,21 @@
-# Trouble_external_Disk
+🧩 Trouble External Disk
+🔧 1. Mengembalikan File yang Hilang Menggunakan Command Prompt
+Langkah-langkah:
 
-1. Gunakan Command Prompt untuk Mengembalikan File
-a. Catat huruf drive flashdisk (misal E:).
-b. Buka Command Prompt (CMD) sebagai Administrator.
-Ketik perintah ini (ganti E: dengan huruf flashdiskmu):
+Catat huruf drive flashdisk kamu (misalnya E:).
+
+Buka Command Prompt (CMD) sebagai Administrator.
+
+Ketik perintah berikut (ganti E: dengan huruf drive flashdiskmu):
+
 attrib -h -r -s /s /d E:\*.*
 
-Artinya:
--h → hapus atribut “hidden”
--r → hapus atribut “read-only”
--s → hapus atribut “system”
-/s dan /d → berlaku untuk semua file & folder di dalamnya
-Setelah ini, cek lagi isi flashdisk. Biasanya file yang “hilang” akan muncul kembali.
+Penjelasan perintah:
+
+-h → Menghapus atribut hidden (tersembunyi)
+
+-r → Menghapus atribut read-only (hanya baca)
+
+-s → Menghapus atribut system (file sistem)
+
+/s dan /d → Berlaku untuk semua file dan folder di dalamnya
